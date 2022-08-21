@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(/background.jpeg);
+}
+
+.link {
+  @apply text-ec-red underline hover:no-underline;
+}
+
+.wrapper {
+  margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0 12.5vw;
+  }
+}
